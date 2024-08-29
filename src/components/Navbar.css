@@ -5,7 +5,7 @@
     align-items: center;
     padding: 0 20px;
     background-color: #fff;
-    color: #000;
+    color: #000; 
     height: 60px;
     position: fixed;
     top: 0;
@@ -33,15 +33,39 @@
   }
   
   .navbar-center a {
-    color: #000;
+    color: #767676;
     text-decoration: none;
     font-size: 16px;
     margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    padding: 0 17px; /* Reset padding */
+    position: relative; /* Position relative to use pseudo-elements */
+  }
+
+  .navbar-center a::after {
+    content: ''; /* Creates a pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    left: 0;
+    bottom: -18px; /* Position it 17px below the text */
+    width: 0; /* Initial width of the border */
+    height: 2px; /* Height of the bottom border */
+    background-color: #8153FC; /* Color of the bottom border */
+    transition: width 0.3s ease; /* Smooth transition for width */
+  }
+
+  .navbar-center a:hover::after {
+    width: 100%; /* Adjust width considering padding */
   }
 
   .navbar-center a:hover {
-    color: #535bf2; /* Adjust hover color for links */
+    color: #8153FC; /* Adjust hover color for links */
+  }
+
+  .nav-link.active {
+    color: #8153FC; /* Color for the active link */
+  }
+  
+  .nav-link.active::after {
+    width: 100%; /* Ensure the border-bottom is visible under the active link */
   }
 
   .navbar-right {

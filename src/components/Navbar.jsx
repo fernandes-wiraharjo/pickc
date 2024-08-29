@@ -1,18 +1,22 @@
-// src/components/Navbar.js
+import { useLocation } from 'react-router-dom'; // Import useLocation hook
 import './Navbar.css'; // Import the CSS file for styling
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <img src="/logo_x4.png" alt="Logo" className="logo" />
       </div>
       <div className="navbar-center">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</a>
+        <a href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</a>
       </div>
       <div className="navbar-right">
-        <a href="#contact">Contact</a>
+        <a href="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</a>
       </div>
     </nav>
   );

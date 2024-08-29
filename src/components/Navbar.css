@@ -80,4 +80,19 @@
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
   }
+
+  .navbar-right a.contact-button {
+    display: inline-block; /* Ensures padding and border radius work properly */
+    border-radius: 12px; /* Border radius for rounded corners */
+    border: 1px solid #C7C7C7; /* Border color and width */
+    font-weight: 800; /* Font weight */
+    padding: 8px 16px; /* Padding for button appearance */
+    text-align: center; /* Center text inside the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+
+  .navbar-right a.contact-button:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+    color: #000; /* Text color on hover */
+  }
   

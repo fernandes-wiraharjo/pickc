@@ -21,7 +21,6 @@
 .home-subtext {
   font-size: 20px;
   margin-top: 30px; /* Adds some space above the text */
-  color: #323232;
 }
 
 .product-video-section {
@@ -43,4 +42,111 @@
   top: 177px;
   left: 395.33px;
   opacity: 90%;
+}
+
+.new-section {
+  margin: 90px auto; /* Adjust margin as needed for spacing around the section */
+}
+
+.section-text {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin: 0;
+}
+
+.sub-section-text {
+  width: 640px;
+  height: 58px;
+  margin: 16px auto;
+  font-size: 18px;
+  line-height: 28.8px;
+  max-width: 100%;
+  color: #323232;
+}
+
+.get-solution-section .image-container {
+  width: 330px; /* Ensure the width is correct */
+  height: 320px; /* Ensure the height is correct */
+  padding: 20px 113px;
+  border-radius: 16px;
+  background: #F5F5F5;
+  opacity: 1; /* Ensure visibility */
+  /* box-shadow: 11px 17px 40px 0px #0000000F; */
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image vertically */
+}
+
+.get-solution-section .image-container .image {
+  width: 314px; /* Adjust as needed */
+  height: 280px; /* Adjust as needed */
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each step */
+}
+
+.step {
+  display: flex;
+  align-items: flex-start; /* Align bullet with text */
+  gap: 16px; /* Space between bullet and content */
+  padding-left: 50px;
+}
+
+.bullet {
+  width: 4px;
+  min-height: 32px; /* Minimum height of bullet */
+  border-radius: 100px;
+  background: #F5F5F5;
+  margin-top: 12px;
+  /* Dynamically adjust height to match text content */
+}
+
+.bullet.first {
+  min-height: 150px;
+  margin-top: 20px;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  width: 496px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.step-description {
+  width: 496px;
+  font-size: 18px;
+  line-height: 28.8px;
+  text-align: left;
+  color: #323232;
+  margin-top: 0;
+}
+
+.step-title-secondary {
+  width: 476px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #767676;
 }

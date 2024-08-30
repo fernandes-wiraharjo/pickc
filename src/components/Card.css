@@ -1,0 +1,35 @@
+.card {
+    width: 300px; /* Card width */
+    height: 180px; /* Card height */
+    padding: 24px 40px; /* Padding inside the card */
+    border-radius: 24px;
+    border: 1px solid #c7c7c7;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Space between icon and text */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  .card-icon {
+    display: flex;
+    align-items: flex-start; /* Align icon to the top left */
+    justify-content: flex-start; /* Align icon to the left */
+  }
+
+  .card-icon img {
+    width: 25px;
+    height: 25px;
+    color: #131313; /* Icon color */
+    margin-bottom: 16px; /* Space between icon and text */
+  }
+  
+  .card-text {
+    width: 293.33px;
+    font-size: 18px;
+    line-height: 28.8px;
+    text-align: left;
+    color: #323232;
+    margin: 0; /* Remove default margins */
+  }
+  

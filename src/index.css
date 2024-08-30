@@ -45,6 +45,15 @@ h1 {
   line-height: 1.1;
 }
 
+.text-sub {
+  color: #323232;
+
+}
+
+.text-purple {
+  color: #8153FC;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -102,6 +111,24 @@ button:focus-visible {
   color: #000000;
 }
 
+.mt-8 {
+  margin-top: 8px; /* Adds specific space above this element */
+}
+
 .mt-10 {
-  margin-top: 10px; /* Adds specific space above this button */
+  margin-top: 10px; /* Adds specific space above this element */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  gap: 20px; /* Space between cards */
+  /* flex-wrap: wrap; Allow wrapping if there are more cards */
+  margin-top: 40px; /* Space above the card section */
+}
+
+.col-6 {
+  width: 50%; /* Each column takes half the width of the container */
 }

@@ -20,9 +20,9 @@ const Footer = () => {
       </div>
       <div className="footer-line"></div>
       <div className="footer-bottom-links">
-        <a href="#" className="bottom-link">© 2024 PickC</a>
-        <a href="#" className="bottom-link">Privacy Policy</a>
-        <a href="#" className="bottom-link">Terms of Service</a>
+        <label className="bottom-link">© 2024 PickC</label>
+        <a href="#" className="navlink">Privacy Policy</a>
+        <a href="#" className="navlink">Terms of Service</a>
       </div>
     </footer>
   );
